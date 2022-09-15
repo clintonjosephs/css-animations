@@ -5,18 +5,23 @@ button {
     color: white;
     border: none;
     background-color: blue;
-    transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-property: background-color color width; /* all */
+    transition: all 1s ease-in 2s;
+    /* transition-duration: 0.5s;
+    transition-delay: 1s; */
     /* transition-timing-function determines how the change in the property will occur */
     /* ease: the change starts slowly, then accelerates, and then slows down at the end */
     /* linear: the change occurs at a constant speed */
     /* ease-in: the change starts slowly then go faster before the end */
     /* ease-out: the change starts fast then slows down before the end */
     /* ease-in-out: the change starts slowly, accelerates, then slows down before the end */
+    /* Transition delay: This represents the time before the transition starts */
 }
 
 button:hover {
     background-color: green;
+    color: black;
+    width: 600px;
 }
 
 .container {
@@ -63,3 +68,5 @@ button:hover {
 .move:hover {
     transform: translate(900px, 0);
 }
+
+
