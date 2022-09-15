@@ -1,0 +1,65 @@
+button {
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    /* transition-timing-function determines how the change in the property will occur */
+    /* ease: the change starts slowly, then accelerates, and then slows down at the end */
+    /* linear: the change occurs at a constant speed */
+    /* ease-in: the change starts slowly then go faster before the end */
+    /* ease-out: the change starts fast then slows down before the end */
+    /* ease-in-out: the change starts slowly, accelerates, then slows down before the end */
+}
+
+button:hover {
+    background-color: green;
+}
+
+.container {
+    width: 960px;
+}
+
+.move {
+    margin: 2em;
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: red;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: .5em;
+    font-size: 20px;
+    transition-property: translate();
+    transition-duration: 3s;
+}
+
+#ease {
+    transition-timing-function: ease;
+}
+
+#linear {
+    transition-timing-function: linear;
+}  
+
+#ease-in {
+    transition-timing-function: ease-in;
+}
+
+#ease-out {
+    transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+
+
+.move:hover {
+    transform: translate(900px, 0);
+}
